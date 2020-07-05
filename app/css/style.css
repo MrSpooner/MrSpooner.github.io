@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Comfortaa', Arial;
+}
+
+body {
+    background: #f7f9f7;
+}
+
+
+.navbar_position{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    width: 100%;
+    height: 50px; 
+    background: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.navbar{
+    background-image: linear-gradient(to top right, rgb(101, 115, 255), rgb(111, 114, 247), rgb(120, 114, 239), rgb(130, 113, 231), rgb(139, 112, 223), rgb(149, 111, 215), rgb(158, 111, 208), rgb(168, 110, 200), rgb(177, 109, 192), rgb(187, 108, 184), rgb(196, 108, 176), rgb(206, 107, 168));
+    color: white;
+}
+.navbar__button_play{
+    cursor:pointer;
+    }
+.wrapper{
+    justify-content: space-around;
+    margin: 0 auto;
+    min-width: 700px;
+    max-width: 1000px;
+    display:flex;
+    align-content: center;
+    height: calc(100vh - 77px);
+}
+
+.field__cells{
+    display:grid;
+    border: 1px solid rgb(101, 115, 255);
+    grid-template-columns: repeat(10, 1fr);
+    user-select: none;
+}
+.field__title{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.field__title_highlight{
+    background-color: #97d8b2;
+   border-radius: 5px;
+}
+
+.field__cell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(101, 115, 255);
+    transition: background-color 0.3s;
+}
+
+.field__X{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #97d8b2;
+    color: #fff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    
+      
+}
+.field__O{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #531253d0;
+    color: #fff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    
+}
+.field__ship{
+    background-color: rgba(43, 159, 226, 0.418);
+}
+
+.field__cell:hover{
+    background: rgba(25, 177, 63, 0.589);
+    opacity: 0.5;
+}
+.text_vs{
+    align-self: center;
+}
+
+.field_position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer{
+    background:  #531253d0;
+    box-shadow: 0 -200px 100px -120px rgba(43, 159, 226, 0.418) inset;
+    animation: background 20s infinite alternate;
+    color:white;
+}
+@keyframes background {
+    50% {
+      background: skyblue;
+      box-shadow: 0 -200px 100px -100px rgba(156, 50, 205, 0.781) inset;
+    }
+  }
